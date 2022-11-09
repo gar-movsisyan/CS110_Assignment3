@@ -1,0 +1,23 @@
+function plus(n){
+    let mySimbol = "+";
+    let returnable = "";
+    let outerIndex = 0;
+    while(outerIndex < n){
+        let innerIndex = 0;
+        let line = "";
+        while(innerIndex < n){
+            line += mySimbol;
+            innerIndex++
+        }
+        returnable += line;
+        if (outerIndex != n-1){
+            returnable += "\n";
+        }
+
+        outerIndex++;
+    }
+    return returnable;
+}
+
+console.log(plus(2));
+
