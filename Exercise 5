@@ -1,0 +1,21 @@
+function decimalToBinary(number){
+    let binary = "";
+    while(true){
+        if(number==0){
+            binary = binary +String(0);
+            break;
+        }
+        if(number == 1){
+            binary = binary + String(1);
+            break;
+        }
+        let q = number % 2;
+        binary = binary +String(q);
+        
+        number = Math.floor(number /2);
+       // console.log(number);
+    }
+    console.log(binary);
+    return;
+}
+    decimalToBinary(10);
