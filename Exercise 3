@@ -1,0 +1,10 @@
+function multiplication(x,y){ //x is the number to be multipled, y is the number of repetitions
+    let answer = 0;
+    index = 0;
+    while(index < y ){
+        answer = answer +x;
+        index++;
+    }
+    return answer;
+}
+console.log(multiplication(3,9));
