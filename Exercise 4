@@ -1,0 +1,6 @@
+let array = [ 1, 2, 9, 4];
+let reverse = [];
+for (let index = array.length -1; index >= 0; index--){
+reverse.push(array[index]);
+}
+console.log(reverse);
